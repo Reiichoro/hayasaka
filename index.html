@@ -3,67 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REIICHORO | 烈中金科技程序</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-        body { background-color: #0a0a0a; color: #d1d1d1; font-family: 'Space Mono', monospace; }
-        .tech-gradient { background: linear-gradient(90deg, #ff3e3e 0%, #ffca28 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .glass-card { background: rgba(20, 20, 20, 0.8); backdrop-filter: blur(10px); border: 1px solid #333; transition: all 0.3s; }
-        .glass-card:hover { border-color: #ff3e3e; box-shadow: 0 0 20px rgba(255, 62, 62, 0.2); }
-    </style>
-</head>
-<body class="antialiased">
+    <title>REIICHORO | 烈中金科技</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
 
-    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center bg-black/80 border-b border-white/10">
-        <div class="text-xl font-bold tracking-tighter tech-gradient">REIICHORO</div>
-        <div class="hidden md:flex space-x-8 text-xs uppercase tracking-widest">
-            <a href="#core" class="hover:text-red-500 transition">核心技術</a>
-            <a href="#protocol" class="hover:text-red-500 transition">數據協議</a>
-            <a href="#" class="px-3 py-1 border border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition">接入終端</a>
-        </div>
+    <nav>
+        <div class="logo">REIICHORO 烈中金</div>
+        <ul class="nav-links">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="articles.html">文章列表</a></li>
+            <li><a href="#about">關於我們</a></li>
+        </ul>
     </nav>
 
-    <section class="h-screen flex flex-col justify-center items-center px-4 overflow-hidden">
-        <div class="animate__animated animate__fadeInDown">
-            <span class="text-red-600 font-bold tracking-widest text-sm text-center block mb-4">SYSTEM INITIALIZING...</span>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-center tracking-tighter">烈 · 中 · 金</h1>
-        </div>
-        <p class="max-w-xl text-center text-gray-500 text-sm md:text-base mb-10 animate__animated animate__fadeInUp">
-            基於非線性算法的跨維度數據工具，為不確定的數字資產提供確定的底層邏輯支撐。
-        </p>
-        <div class="flex space-x-4 animate__animated animate__fadeInUp">
-            <button class="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-sm font-bold transition">啟動程序</button>
-            <button class="border border-gray-600 hover:border-white px-8 py-3 text-sm font-bold transition text-gray-400 hover:text-white">查看文檔</button>
-        </div>
-    </section>
+    <header class="hero">
+        <h1>高端 · 穩定 · 信任</h1>
+        <p>REIICHORO 企業級數字安全與算法協議底層框架</p>
+    </header>
 
-    <section id="core" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="glass-card p-8">
-                <div class="text-red-600 mb-4 text-2xl">01</div>
-                <h3 class="text-xl font-bold mb-4">高頻處理</h3>
-                <p class="text-gray-500 text-sm">採用分佈式架構，在毫秒級別完成數據吞吐與邏輯校驗，無懼極端波動。</p>
-            </div>
-            <div class="glass-card p-8">
-                <div class="text-red-600 mb-4 text-2xl">02</div>
-                <h3 class="text-xl font-bold mb-4">隱匿協議</h3>
-                <p class="text-gray-500 text-sm">端到端的量子級加密算法，確保信息在傳輸過程中處於絕對黑箱狀態。</p>
-            </div>
-            <div class="glass-card p-8">
-                <div class="text-red-600 mb-4 text-2xl">03</div>
-                <h3 class="text-xl font-bold mb-4">自適應邏輯</h3>
-                <p class="text-gray-500 text-sm">機器學習驅動的動態策略引擎，根據市場環境自動優化執行路徑。</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-10 border-t border-white/5 text-center">
-        <div class="text-gray-600 text-[10px] tracking-[0.3em] uppercase">
-            © 2026 REIICHORO LABS // ENCRYPTED ACCESS ONLY
-        </div>
-    </footer>
+    <div class="container" id="about">
+        <h2>企業使命</h2>
+        <p>致力於為全球用戶提供最穩定的數字算法支撐，確保每一行代碼都具備金融級的安全保障。</p>
+    </div>
 
 </body>
 </html>
