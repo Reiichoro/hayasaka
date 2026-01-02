@@ -1,0 +1,77 @@
+/* Windows 10 企業藍配色方案 */
+:root {
+    --win-blue: #0078d4;          /* 標準 Windows 藍 */
+    --win-dark-blue: #005a9e;     /* 深藍色 (信任感) */
+    --bg-light: #f3f3f3;          /* 淺灰背景 */
+    --text-dark: #201f1e;         /* 企業級深灰字體 */
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', "Microsoft JhengHei", sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* 導航欄 - 解決手機不顯示問題 */
+nav {
+    background-color: var(--win-blue);
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo { font-size: 1.5rem; font-weight: bold; letter-spacing: 1px; }
+
+.nav-links { display: flex; list-style: none; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: white; text-decoration: none; font-size: 0.95rem; }
+
+/* 手機適配自適應 */
+@media (max-width: 768px) {
+    .nav-links { font-size: 0.8rem; }
+    .nav-links li { margin-left: 10px; }
+    .hero h1 { font-size: 2rem !important; }
+}
+
+/* 主視覺區 (Hero) */
+.hero {
+    background: linear-gradient(135deg, var(--win-blue) 0%, var(--win-dark-blue) 100%);
+    color: white;
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.hero h1 { font-size: 3.5rem; margin-bottom: 20px; }
+
+/* 容器與列表 */
+.container { padding: 50px 10%; }
+.article-list {
+    background: var(--white);
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+}
+
+.article-item {
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+}
+.article-item:hover { background-color: #f9f9f9; }
+.article-item a { 
+    color: var(--win-blue); 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 1.1rem;
+}
+.article-date { color: #888; font-size: 0.8rem; margin-left: 10px; }
